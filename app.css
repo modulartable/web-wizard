@@ -1,5 +1,19 @@
-body {
-	margin: 0;
-	padding: 0;
+:root {
+  /* Font stack */
+  --roboto: "Roboto", Sans-Serif;
+  --lora: "Lora", Serif;
+
+  /* Color pallete */
+  --black: #000000;
+  --blue: #14213d;
+  --gold: #fca311;
+  --grey: #e5e5e5;
+  --white: #ffffff;
 }
-		
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--lora);
+}
