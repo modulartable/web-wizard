@@ -1,16 +1,51 @@
-<!DOCTYPE HTML>
-<html lang='en'>
-	<head>
-		<meta charset='UTF-8' />
-		<meta name='viewport' content='width=device-width, initial-scale=1.0' />
-		<meta http-equiv='X-UA-Compatible' content='ie-edge' />
-		<title>Web Wizard</title>
-		<link rel='stylesheet' href='app.css' />
-		<link href="https://fonts.googleapis.com/css?family=Lora|Roboto:400,700" rel="stylesheet">
-	</head>
-	<body>
-				
-	</body>
-	<script src='app.js'></script>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <title>Web Wizard</title>
+    <link rel="stylesheet" href="app.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora|Roboto:400,700"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="headerLogo">
+        <img
+          class="logo"
+          src="./images/Wizard_hat.png"
+          alt="Web Wizard's Logo"
+        />
+        <div class="logoText">
+          <h1>Web</h1>
+          <h1>Wizard</h1>
+        </div>
+      </div>
+
+      <div
+        id="hamburger"
+        role="navigation"
+        title="mobileNavMenu"
+        aria-label="mobileNavMenu"
+      >
+        <div id="line1" class="line line-1"></div>
+        <div id="line2" class="line line-2"></div>
+        <div id="line3" class="line line-3"></div>
+      </div>
+
+      <nav id="navBar" class="navBar">
+        <a href="#top" alt="Top of the page" class="navLinks">Home</a>
+        <a href="#projects" alt="Projects" class="navLinks">Plans</a>
+        <a href="#about" alt="About Me" class="navLinks">About</a>
+        <a href="#contact" alt="Contact Me" class="navLinks">Contact Us</a>
+        <a href="#placeholder" class="navLinks" alt="Frequently asked questions"
+          >FAQ</a
+        >
+      </nav>
+    </header>
+  </body>
+  <script src="app.js"></script>
 </html>
-		
