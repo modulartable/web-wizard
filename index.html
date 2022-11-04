@@ -12,40 +12,71 @@
     />
   </head>
   <body>
-    <header class="header">
-      <div class="headerLogo">
-        <img
-          class="logo"
-          src="./images/Wizard_hat.png"
-          alt="Web Wizard's Logo"
-        />
-        <div class="logoText">
-          <h1>Web</h1>
-          <h1>Wizard</h1>
+    <section id="home">
+      <header class="header">
+        <div class="headerLogo">
+          <img
+            class="logo"
+            src="./images/Wizard_hat.png"
+            alt="Web Wizard's Logo"
+          />
+          <div class="logoText">
+            <h1>Web</h1>
+            <h1>Wizard</h1>
+          </div>
         </div>
-      </div>
+      </header>
+    </section>
+    <div
+      id="hamburger"
+      role="navigation"
+      title="mobileNavMenu"
+      aria-label="mobileNavMenu"
+    >
+      <div id="line1" class="line line-1"></div>
+      <div id="line2" class="line line-2"></div>
+      <div id="line3" class="line line-3"></div>
+    </div>
 
-      <div
-        id="hamburger"
-        role="navigation"
-        title="mobileNavMenu"
-        aria-label="mobileNavMenu"
-      >
-        <div id="line1" class="line line-1"></div>
-        <div id="line2" class="line line-2"></div>
-        <div id="line3" class="line line-3"></div>
-      </div>
+    <nav id="navBar" class="navBar">
+      <a href="#home" alt="Top of the page" class="navLinks">Home</a>
+      <a href="#plans" alt="Projects" class="navLinks">Plans</a>
+      <a href="#about" alt="About Me" class="navLinks">About</a>
+      <a href="#contact" alt="Contact Me" class="navLinks">Contact Us</a>
+      <a href="#faq" class="navLinks" alt="Frequently asked questions">FAQ</a>
+    </nav>
 
-      <nav id="navBar" class="navBar">
-        <a href="#top" alt="Top of the page" class="navLinks">Home</a>
-        <a href="#projects" alt="Projects" class="navLinks">Plans</a>
-        <a href="#about" alt="About Me" class="navLinks">About</a>
-        <a href="#contact" alt="Contact Me" class="navLinks">Contact Us</a>
-        <a href="#placeholder" class="navLinks" alt="Frequently asked questions"
-          >FAQ</a
-        >
-      </nav>
-    </header>
+    <div class="heroContainer">
+      <h1>Summon your website's potential.</h1>
+      <h2>Web hosting so easy it's magic!</h2>
+
+      <img class="heroImg" src="./images/heroImage.png" alt="Server cluster" />
+    </div>
+
+    <section id="about">
+      <div class="aboutContainer">
+        <h1 class="sectionHead">The origin</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+          <br />
+          <br />
+
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <img class="icons" src="./images/facebook.png" alt="Facebook" />
+      <img class="icons" src="./images/instagram.png" alt="Instagram" />
+      <img class="icons" src="./images/twitter.png" alt="Instagram" />
+      <img class="icons" src="./images/pinterest.png" alt="Instagram" />
+    </footer>
   </body>
   <script src="app.js"></script>
 </html>
