@@ -27,7 +27,6 @@ h1 h2 {
 .header {
   position: relative;
   background-color: var(--gold);
-  animation: slideLeft 1.5s ease-in 0s 1 normal forwards;
 }
 
 .headerLogo {
@@ -54,13 +53,16 @@ h1 h2 {
   padding: 1em;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: var(--gold);
   color: var(--black);
-  animation: slideLeft 1.5s ease-in 0s 1 normal forwards;
 }
 
 .heroImg {
 padding: 1em;
+width: 100%;
+max-width: 500px;
 }
 
 .heroContainer h1 {
@@ -74,14 +76,45 @@ padding: 1em;
 
 .aboutContainer {
   padding: 1em;
+  margin: 1em;
 }
 
-.sectionHead {
-text-decoration: underline;
+.plansContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.planCards {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: var(--gold);
+color: var(--blue);
+border-radius: 5px;
+max-width: 300px;
+padding: 1em;
+margin: 1em;
+height: 500px;
+}
+
+.planCards li {
+list-style: none;
+padding: 3px;
+}
+
+.planCards h2 h4 {
+  margin: 0;
+}
+
+.prices {
+  color:var(--white);
 }
 
 #hamburger {
-  position: absolute;
+  position: fixed;
   bottom: 10px;
   left: 10px;
   z-index: 99;
@@ -101,7 +134,7 @@ text-decoration: underline;
 }
 
 .navBarToggle {
-  position: absolute;
+  position: fixed;
   bottom: 5em;
   align-items: center;
   padding: 1rem;
