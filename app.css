@@ -60,9 +60,9 @@ h1 h2 {
 }
 
 .heroImg {
-padding: 1em;
-width: 100%;
-max-width: 500px;
+  padding: 1em;
+  width: 100%;
+  max-width: 500px;
 }
 
 .heroContainer h1 {
@@ -79,6 +79,11 @@ max-width: 500px;
   margin: 1em;
 }
 
+.aboutImg {
+  width: 100%;
+  border-radius: 5px;
+}
+
 .plansContainer {
   display: flex;
   justify-content: center;
@@ -87,22 +92,22 @@ max-width: 500px;
 }
 
 .planCards {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-background-color: var(--gold);
-color: var(--blue);
-border-radius: 5px;
-max-width: 300px;
-padding: 1em;
-margin: 1em;
-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--gold);
+  color: var(--blue);
+  border-radius: 5px;
+  max-width: 300px;
+  padding: 1em;
+  margin: 1em;
+  height: 500px;
 }
 
 .planCards li {
-list-style: none;
-padding: 3px;
+  list-style: none;
+  padding: 3px;
 }
 
 .planCards h2 h4 {
@@ -110,7 +115,45 @@ padding: 3px;
 }
 
 .prices {
-  color:var(--white);
+  color: var(--white);
+}
+
+.faqContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.accordion {
+  background-color: var(--grey);
+  color: var(--black);
+  cursor: pointer;
+  padding: 1em;
+  border-radius: 5px;
+  border: none;
+  text-align: left;
+  margin: 0.5em;
+}
+
+.accordion::after {
+  content: "\02795";
+  color: var(--black);
+  float: right;
+}
+
+.active,
+.accordion:hover {
+  background-color: var(--gold);
+}
+
+.panel {
+  background-color: var(--grey);
+  color: var(--black);
+  max-height: 0;
+  overflow: hidden;
+  border-radius: 5px;
 }
 
 #hamburger {
@@ -210,44 +253,3 @@ padding: 3px;
   width: 2em;
 }
 
-@keyframes scaleIn {
-  0% {
-    transform: scale(0);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes scaleOut {
-  0% {
-    transform: scale(1);
-  }
-
-  100% {
-    transform: scale(0);
-  }
-}
-
-@keyframes slideLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-250px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
