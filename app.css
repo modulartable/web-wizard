@@ -31,7 +31,7 @@ h1 h2 {
 
 .headerLogo {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 
@@ -57,6 +57,13 @@ h1 h2 {
   align-items: center;
   background-color: var(--gold);
   color: var(--black);
+  position: relative;
+}
+
+.signUp {
+  width: 75px;
+  height: 45px;
+  border-radius: 5px;
 }
 
 .heroImg {
@@ -76,7 +83,6 @@ h1 h2 {
 
 .aboutContainer {
   padding: 1em;
-  margin: 1em;
 }
 
 .aboutImg {
@@ -105,6 +111,11 @@ h1 h2 {
   height: 500px;
 }
 
+.orderLink {
+  text-decoration: none;
+  color: var(--white);
+}
+
 .planCards li {
   list-style: none;
   padding: 3px;
@@ -124,6 +135,11 @@ h1 h2 {
   justify-content: center;
   align-items: center;
   padding: 1em;
+  background-color: var(--gold);
+}
+
+.faqContainer h1 {
+  color: var(--black);
 }
 
 .accordion {
@@ -145,13 +161,21 @@ h1 h2 {
 
 .active,
 .accordion:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.activeForm,
+.formFields:hover {
   background-color: var(--gold);
+  color: var(--black);
 }
 
 .panel {
   background-color: var(--grey);
   color: var(--black);
   max-height: 0;
+  width: 325px;
   overflow: hidden;
   border-radius: 5px;
 }
@@ -253,3 +277,137 @@ h1 h2 {
   width: 2em;
 }
 
+.contactContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 1em;
+}
+
+.formFields {
+  margin: 0.5em;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+.orderBtns {
+  width: 125px;
+  height: 35px;
+  border-radius: 5px;
+  padding: 0.5em;
+  background-color: var(--blue);
+  color: var(--white);
+  font-family: var(--roboto);
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.orderBtns:hover {
+  transform: scale(1.1);
+}
+
+#submitBtn {
+  width: 75px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: var(--gold);
+  font-family: var(--lora);
+  font-weight: 500;
+  margin: 1em;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .planCards {
+    padding: 0.5em;
+  }
+
+  .heroContainer {
+    position: relative;
+  }
+
+  .heroContainer h1 {
+    position: absolute;
+    top: 26%;
+    left: 10%;
+  }
+
+  .heroContainer h2 {
+    position: absolute;
+    top: 35%;
+    right: 10%;
+  }
+
+  .panel {
+    max-width: 335px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .navBar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--gold);
+  }
+
+  .navLinks {
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+  }
+
+  .navLinks:hover {
+    background-color: var(--blue);
+    color: var(--gold);
+  }
+
+  #hamburger {
+    display: none;
+  }
+
+  .accordionsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .questions {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .icons:hover {
+    transform: scale(1.1);
+  }
+
+  .aboutImg {
+    max-width: 50%;
+  }
+
+  .photosContainer {
+    display: flex;
+    margin: 0;
+  }
+
+  .aboutText {
+    padding-left: 12em;
+    padding-right: 12em;
+  }
+
+  .aboutContainer {
+    padding-bottom: 0;
+  }
+
+  .heroContainer h1 {
+    left: 15%;
+  }
+
+  .heroContainer h2 {
+    right: 20%;
+  }
+}

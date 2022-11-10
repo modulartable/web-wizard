@@ -4,8 +4,7 @@ const line1 = document.getElementById("line1");
 const line2 = document.getElementById("line2");
 const line3 = document.getElementById("line3");
 const accordions = document.querySelectorAll(".accordion");
-
-console.log(accordions);
+const formFields = document.querySelectorAll(".formFields");
 
 //Toggle the mobile hamburger nav animations onClick
 const animateBurger = () => {
@@ -35,8 +34,14 @@ for (i = 0; i < accordions.length; i++) {
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
       panel.style.padding = "1em";
-      
     }
+  });
+}
 
+//Add event listener to all form fields to toggle the active class
+
+for (j = 0; j < formFields.length; j++) {
+  formFields[j].addEventListener("click", function () {
+    this.classList.toggle("activeForm");
   });
 }
