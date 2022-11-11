@@ -42,7 +42,7 @@
       <a href="#home" alt="Top of the page" class="navLinks">Home</a>
       <a href="#plans" alt="Projects" class="navLinks">Plans</a>
       <a href="#about" alt="About Me" class="navLinks">About</a>
-      <a href="#faq" class="navLinks" alt="Frequently asked questions">FAQ</a>
+      <a href="#FAQ" class="navLinks" alt="Frequently asked questions">FAQ</a>
       <a href="#contact" alt="Contact Me" class="navLinks">Contact Us</a>
     </nav>
 
@@ -268,7 +268,7 @@
           <label for="email">Email:</label> <br />
           <input class="formFields" type="email" id="email" required /> <br />
           <label for="phone">Phone Number:</label> <br />
-          <input class="formFields" type="number" id="phone" required /> <br />
+          <input class="formFields" type="tel" id="phone" pattern="^\+(?:[0-9] ?){6,25}[0-9]$" placeholder="+XX XXXXXXXXX" required /> <br />
           <label>Plan Chosen:</label> <br />
           <input
             name="plan"

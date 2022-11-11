@@ -5,6 +5,10 @@ const line2 = document.getElementById("line2");
 const line3 = document.getElementById("line3");
 const accordions = document.querySelectorAll(".accordion");
 const formFields = document.querySelectorAll(".formFields");
+const submitBtn = document.getElementById("submitBtn");
+let nameField = document.getElementById("fname");
+let emailField = document.getElementById("email");
+let phoneField = document.getElementById("phone");
 
 //Toggle the mobile hamburger nav animations onClick
 const animateBurger = () => {
@@ -45,3 +49,36 @@ for (j = 0; j < formFields.length; j++) {
     this.classList.toggle("activeForm");
   });
 }
+
+//Contact form validation
+const validation = () => {
+  console.log(nameField);
+  console.log(phoneField);
+  console.log(emailField);
+
+  if (
+    nameField.value !== "" &&
+    phoneField.value !== "" &&
+    emailField.value !== ""
+  ) {
+    window.alert(
+      "We will be in contact regarding your pre-order within 2 business days!"
+    );
+
+    nameField.value = "";
+    phoneField.value = "";
+    emailField.value = "";
+  }
+};
+
+//Add event listener for the contact form submit button
+submitBtn.addEventListener("click", validation);
+nameField.addEventListener("change", function (e) {
+  nameField.value = e.target.value;
+});
+emailField.addEventListener("change", function (e) {
+  emailField.value = e.target.value;
+});
+phoneField.addEventListener("change", function (e) {
+  phoneField.value = e.target.value;
+});
