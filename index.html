@@ -68,8 +68,8 @@
           </ul>
 
           <h4>Introductory offer:</h4>
-          <h3 class="prices">$2.75/mo</h3>
-          <a href="#contact" class="orderLink"><button type="button" class="orderBtns">Order now</button></a>
+          <h3>$2.75/mo</h3>
+          <a href="#contact" class="orderLink"><button type="button" class="orderBtns">Pre-Order</button></a>
         </div>
 
         <div class="planCards">
@@ -84,8 +84,8 @@
           </ul>
 
           <h4>Introductory offer:</h4>
-          <h3 class="prices">$3.50/mo</h3>
-          <a href="#contact" class="orderLink"><button type="button" class="orderBtns">Order now</button></a>
+          <h3>$3.50/mo</h3>
+          <a href="#contact" class="orderLink"><button type="button" class="orderBtns">Pre-Order</button></a>
         </div>
 
         <div class="planCards">
@@ -100,8 +100,8 @@
           </ul>
 
           <h4>Introductory offer:</h4>
-          <h3 class="prices">$5.25/mo</h3>
-          <a href="#contact" class="orderLink"><button type="button" class="orderBtns">Order now</button></a>
+          <h3>$5.25/mo</h3>
+          <a href="#contact" class="orderLink"><button type="button" class="orderBtns">Pre-Order</button></a>
         </div>
       </div>
     </section>
@@ -268,7 +268,7 @@
           <label for="email">Email:</label> <br />
           <input class="formFields" type="email" id="email" required /> <br />
           <label for="phone">Phone Number:</label> <br />
-          <input class="formFields" type="tel" id="phone" pattern="^\+(?:[0-9] ?){6,25}[0-9]$" placeholder="+XX XXXXXXXXX" required /> <br />
+          <input class="formFields" type="tel" id="phone" pattern="/^\\(?([0-9]{3})\\)?[-.\\s]?([0-9]{3})[-.\\s]?([0-9]{4})$/" required /> <br />
           <label>Plan Chosen:</label> <br />
           <input
             name="plan"
@@ -295,16 +295,16 @@
             value="business"
           /><label for="business">Business</label>
           <br />
-          <input type="submit" id="submitBtn" />
+          <input type="submit" id="submitBtn"  />
         </form>
       </div>
     </section>
 
     <footer class="footer">
-      <img class="icons" src="./images/facebook.png" alt="Facebook" />
-      <img class="icons" src="./images/instagram.png" alt="Instagram" />
-      <img class="icons" src="./images/twitter.png" alt="Instagram" />
-      <img class="icons" src="./images/pinterest.png" alt="Instagram" />
+      <a href="https://facebook.com" target="_blank noreferrer">"<img class="icons" src="./images/facebook.png" alt="Facebook" /></a>
+      <a href="https://instagram.com" target="_blank noreferrer"><img class="icons" src="./images/instagram.png" alt="Instagram" /></a>
+      <a href="https://twitter.com" target="_blank noreferrer"><img class="icons" src="./images/twitter.png" alt="Instagram" /></a>
+      <a href="https://pinterest.com" target="_blank noreferrer"><img class="icons" src="./images/pinterest.png" alt="Instagram" /></a>
     </footer>
   </body>
   <script src="app.js"></script>

@@ -10,6 +10,8 @@ let nameField = document.getElementById("fname");
 let emailField = document.getElementById("email");
 let phoneField = document.getElementById("phone");
 
+let phoneRegex = /^(\(\d{3}\)|\d{3})-?\d{3}-?\d{4}$/;
+
 //Toggle the mobile hamburger nav animations onClick
 const animateBurger = () => {
   //Toggles the transition classes on each line of the hamburger
@@ -51,28 +53,31 @@ for (j = 0; j < formFields.length; j++) {
 }
 
 //Contact form validation
-const validation = () => {
-  console.log(nameField);
-  console.log(phoneField);
-  console.log(emailField);
-
+const validation = (e) => {
   if (
     nameField.value !== "" &&
-    phoneField.value !== "" &&
+    phoneRegex.test(phoneField.value) === true &&
     emailField.value !== ""
   ) {
     window.alert(
       "We will be in contact regarding your pre-order within 2 business days!"
     );
-
-    nameField.value = "";
-    phoneField.value = "";
-    emailField.value = "";
+  } else {
+    window.alert("Please fill in all fields of the contact form correctly!");
   }
+
+  nameField.value = "";
+  phoneField.value = "";
+  emailField.value = "";
 };
 
 //Add event listener for the contact form submit button
 submitBtn.addEventListener("click", validation);
+submitBtn.addEventListener("submit", function (e) {
+  e.preventDefault();
+});
+
+//Event listneres to control the values of the contact form (i.e. reset the form upon submit and keep track of the values of each field in general)
 nameField.addEventListener("change", function (e) {
   nameField.value = e.target.value;
 });
